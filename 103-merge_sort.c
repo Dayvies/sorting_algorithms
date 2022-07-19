@@ -10,9 +10,12 @@ void merge(int *arr, int *temp, int low, int mid, int high);
  */
 void merge_sort(int *array, size_t size)
 {
-	int sizet = (int)size;
 	int *temp;
+	int sizet;
 
+	if (!size || (int)size < 2)
+		return;
+	sizet = (int)size;
 	temp = malloc(sizeof(int) * (size));
 	merge_sorthelp(array, temp, 0, sizet - 1);
 	free(temp);

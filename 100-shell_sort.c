@@ -11,7 +11,7 @@ void shell_sort(int *array, size_t size)
 	int in, out, vins, inter = 1;
 	int sizet, i = 0;
 
-	if (!size || (int)size < 3)
+	if (!size || (int)size < 2)
 		return;
 	sizet = (int)size;
 	while (inter <= sizet / 3)

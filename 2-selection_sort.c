@@ -11,7 +11,7 @@ void selection_sort(int *array, size_t size)
 	unsigned long int i, j, jmin;
 	int temp;
 
-	if ((int)size < 3)
+	if ((int)size < 2)
 		return;
 
 	for (i = 0; i < size - 1; i++)

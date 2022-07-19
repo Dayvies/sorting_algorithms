@@ -12,7 +12,7 @@ void counting_sort(int *array, size_t size)
 	int max = array[0], i;
 	int sizet;
 
-	if (!size || (int)size < 3)
+	if (!size || (int)size < 2)
 		return;
 	sizet = (int)size;
 	for (i = 1; i < sizet; i++)
