@@ -20,7 +20,7 @@ void counting_sort(int *array, size_t size)
 		if (array[i] > max)
 			max = array[i];
 	}
-	carr = (int *)malloc(sizeof(int) * (max + 1));
+	carr = (int *)malloc(sizeof(size_t) * (max + 1));
 	out = (int *)malloc(sizeof(int) * (size));
 	for (i = 0; i <= max; i++)
 		carr[i] = 0;
