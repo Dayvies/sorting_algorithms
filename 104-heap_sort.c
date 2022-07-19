@@ -48,8 +48,11 @@ void siftDown(int *arr, int n, int i, int sizet)
 
 	if (largest != i)
 	{
-		swap(&arr[i], &arr[largest]);
-		print_array(arr, sizet);
+		if (arr[i] != arr[largest])
+		{
+			swap(&arr[i], &arr[largest]);
+			print_array(arr, sizet);
+		}
 		siftDown(arr, n, largest, sizet);
 	}
 }
